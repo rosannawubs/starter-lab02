@@ -8,6 +8,15 @@ class Images extends CI_Model {
 		parent::__construct();
 	}
 
+        	// return all images, descending order by posst date
+	function newest()
+	{
+		$this->db->order_by("id", "desc");
+                $this->db->limit(3);
+		$query = $this->db->get('images');
+		return $query->result_array();
+        }
+        
 	// return all images, descending order by posst date
 	function all()
 	{

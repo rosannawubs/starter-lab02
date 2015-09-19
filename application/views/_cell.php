@@ -9,5 +9,5 @@ Converted to be a view fragment template:
 
 <a href="./data/{filename}" data-lightbox="gallery"
 	data-title="{title} Posted {uploaded} by {uploader}, in {category}">
-	<img src="./data/thumb/{filenmae}"/>
+	<img src="./data/thumb/{filename}"/>
 </a>
