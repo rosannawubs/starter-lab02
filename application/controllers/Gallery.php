@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/// a new controller called gallery
 class Gallery extends Application {
 
 	/**
@@ -18,6 +19,8 @@ class Gallery extends Application {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+    
+         /// the main function of the controller. in this case sets the view info
         public function index()
         {
                 

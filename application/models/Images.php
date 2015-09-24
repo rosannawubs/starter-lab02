@@ -1,5 +1,6 @@
 <?php
 
+/// a model named images
 class Images extends CI_Model {
 
 	// constructor (a good practice)
@@ -8,7 +9,7 @@ class Images extends CI_Model {
 		parent::__construct();
 	}
 
-        	// return all images, descending order by posst date
+        // return all images, descending order by posst date
 	function newest()
 	{
 		$this->db->order_by("id", "desc");
